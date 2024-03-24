@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./janken.css">
+    <title>じゃんけん</title>
+</head>
+<body style="display: flex;  align-items: center; justify-content: center; text-align: center;">
+    <div>
+        <h1 style="font-size: 3rem;">じゃんけんゲーム</h1>
+        <h2>じゃんけん・・・</h2>
+        <h2 id="pon" style="opacity: 0;">ぽん</h2>
+        <div style="display: flex; justify-content: space-around;"> 
+            <button type="button" onclick="btnClick()">パー</button>
+            <button type="button" onclick="btnClick2()">グー</button>
+            <button type="button" onclick="btnClick3()">チョキ</button>
+        </div>
+        <div style=" width: 400px; margin: 5rem 5rem; display: flex; align-items: center; justify-content:space-between;">
+            <div >
+                <h3>あなた</h3>
+                <h1 id="hand"></h1>
+            </div>
+            <div>
+                <h3>CPU</h3>
+                <h1 id="enemy"></h1>
+            </div>
+        </div>
+        <h2 id="aws"></h2>
+    </div>
+
+
+
+
+    <script type = "text/javascript" src = "./janken.js"> </script>
+</body>
+</html>
