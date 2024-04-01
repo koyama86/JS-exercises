@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>掲示板</title>
+    <style>
+        textarea{
+            resize: none;
+        }
+        li{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>掲示板</h1>
+    <form>
+
+        <label for="name">ニックネーム:</label>
+        <input type="text" id="name" name="name" placeholder="名無し"  style="margin-bottom: 1rem;"><br>
+
+
+        <label for="area">投稿:</label><br>
+        <textarea id="area" placeholder="内容" cols=60 rows="5" ></textarea>
+        <br>
+        <button type="button" onclick="gettoukou()">投稿</button>
+    </form>
+    <p style="border-bottom: 1px black solid;"></p>
+
+    <ul id="mainBoard">
+        
+    </ul>
+    <script type="text/javascript" src="./board.js"></script>
+</body>
+</html>
